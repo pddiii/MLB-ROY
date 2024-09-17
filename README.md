@@ -55,36 +55,6 @@ The [Cleaned Player IDs](data/cleaned_player_ids.csv) were sourced from a previo
 
 #### Relievers Variables
 
-| Feature                | Feature            | Feature            | Feature            | Feature            |
-|------------------------|--------------------|--------------------|--------------------|--------------------|
-| WAR                    | ERA-_int_FIP-_int_WPA | vote_getter       | K%+                | BB%+               |
-| SD_int_MD              | IP_int_K/BB+       | HR/9+              | K%+_int_BB%+       |                    |
-
-#### Starters Variables
-
-| Feature                | Feature            | Feature                | Feature            | Feature            |
-|------------------------|--------------------|------------------------|--------------------|--------------------|
-| ERA-_int_FIP-_int_WAR  | WPA/IP             | vote_getter            | ERA-_int_FIP-_int_WPA | AVG+               |
-| HR/9+                  | HR/9+_int_BB%+     | IP_int_K%+             | K-BB%_int_FIP-      | BB%+               |
-
-#### Batters Variables
-
-| Feature            | Feature        | Feature      |
-|--------------------|----------------|--------------|
-| wRC+_int_WAR       | PA             | vote_getter  |
-
-
-### Rookie of the Year
-
-- Output: Probability between 0 and 1 for winning Rookie of the Year (`rookie_of_the_year`)
-- Utilize these predictions to discuss the possible Rookie of the Year candidates
-
-**Predictions**
-
-[Rookie of the Year Predictions](/data/predictions/vote_roy_preds.csv)
-
-#### Relievers Variables
-
 - The `_int` variabels were created to study the interactions between those numeric variables where the interaction is formed by multiplying the numeric variables together.
 
 | Feature                | Feature            | Feature                | Feature                |
@@ -115,3 +85,33 @@ The [Cleaned Player IDs](data/cleaned_player_ids.csv) were sourced from a previo
 | OBP+                   | WPA/LI             | Off                | BB/K               |                    |
 | BB%+                   | SLG+               | Def_int_Off_int_WPA | Def_int_Off        |                    |
 | WAR/G                  | BB/K               | Def_int_Off        |                    |                    |
+
+
+### Rookie of the Year
+
+- Output: Probability between 0 and 1 for winning Rookie of the Year (`rookie_of_the_year`)
+- Utilize these predictions to discuss the possible Rookie of the Year candidates
+
+**Predictions**
+
+[Rookie of the Year Predictions](/data/predictions/vote_roy_preds.csv)
+
+#### Relievers Variables
+
+| Feature                | Feature            | Feature            | Feature            | Feature            |
+|------------------------|--------------------|--------------------|--------------------|--------------------|
+| WAR                    | ERA-_int_FIP-_int_WPA | vote_getter       | K%+                | BB%+               |
+| SD_int_MD              | IP_int_K/BB+       | HR/9+              | K%+_int_BB%+       |                    |
+
+#### Starters Variables
+
+| Feature                | Feature            | Feature                | Feature            | Feature            |
+|------------------------|--------------------|------------------------|--------------------|--------------------|
+| ERA-_int_FIP-_int_WAR  | WPA/IP             | vote_getter            | ERA-_int_FIP-_int_WPA | AVG+               |
+| HR/9+                  | HR/9+_int_BB%+     | IP_int_K%+             | K-BB%_int_FIP-      | BB%+               |
+
+#### Batters Variables
+
+| Feature            | Feature        | Feature      |
+|--------------------|----------------|--------------|
+| wRC+_int_WAR       | PA             | vote_getter  |
