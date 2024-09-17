@@ -167,7 +167,7 @@ The data utilized in the models was sourced from FanGraphs using their custom re
 
 ## Cleaning/Pre-processing
 
-To not overkill this report with information I will skip over discussion of cleaning and pre-processing of the data. If you are interested please look no further than the [Data Cleaning Python Notebook](roy_cleaning.ipynb) linked here. 
+To not overkill this report with information I will skip over discussion of cleaning and pre-processing of the data. If you are interested please look no further than the [Data Cleaning Python Notebook](https://github.com/pddiii/MLB-ROY/blob/main/scripts_and_notebooks/roy_cleaning.ipynb) linked here. 
 
 ## Training/Testing Data
 
