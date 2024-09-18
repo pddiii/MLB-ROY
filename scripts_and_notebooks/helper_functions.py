@@ -74,9 +74,9 @@ def model_and_tune(data, target_var, space, predictors, stratify_col, stop_round
     numeric_features = X.select_dtypes(include=[np.number]).columns.tolist()
     cat_features = X.select_dtypes(include=['category', 'object']).columns.tolist()
     
-    # Standardize numeric features
-    scaler = StandardScaler()
-    X[numeric_features] = scaler.fit_transform(X[numeric_features])
+    # # Standardize numeric features
+    # scaler = StandardScaler()
+    # X[numeric_features] = scaler.fit_transform(X[numeric_features])
     
     if stratify_col is None: ## no stratified-sampling
         # Split into training and test sets
@@ -314,11 +314,11 @@ def make_preds(data, predictors, eval_tuple, target, cols_to_round=None, round_c
     numeric_features = X.select_dtypes(include=[np.number]).columns.tolist()
     cat_features = X.select_dtypes(include=['category', 'object']).columns.tolist()
 
-    # initialize the StandardScaler
-    scaler = StandardScaler()
+    # # initialize the StandardScaler
+    # scaler = StandardScaler()
 
-    # Standardize the numeric features
-    X[numeric_features] = scaler.fit_transform(X[numeric_features])
+    # # Standardize the numeric features
+    # X[numeric_features] = scaler.fit_transform(X[numeric_features])
 
     # Predict the probabilities using the LightGBM model
     y_pred_prob = lgbm_cl.predict(X)
@@ -435,9 +435,9 @@ def update_mod_eval(model_tuple, best_predictors, stratify_col, target_var, data
     numeric_features = X.select_dtypes(include=[np.number]).columns.tolist()
     cat_features = X.select_dtypes(include=['category', 'object']).columns.tolist()
     
-    # Standardize numeric features
-    scaler = StandardScaler()
-    X[numeric_features] = scaler.fit_transform(X[numeric_features])
+    # # Standardize numeric features
+    # scaler = StandardScaler()
+    # X[numeric_features] = scaler.fit_transform(X[numeric_features])
 
     if stratify_col is None:
         # Split into training and test sets
@@ -590,3 +590,41 @@ def evaluate_predictors(rank_df, model_tuple, data, stratify_col, target_var,
         'best_f1': best_f1,
         'best_conf_mat': best_conf_mat
     }
+
+
+def get_mutual_info(data, predictors, target):
+    # Target variable
+    y = data[target]
+
+    # Features dataset
+    X = data[predictors]
+
+    # Mutual Information classification
+    from sklearn.feature_selection import mutual_info_classif
+
+    # Compute mutual information between each predictor and the target
+    mi = mutual_info_classif(X, y)
+
+    # Zip predictors with mutual information scores
+    mi_scores = dict(zip(predictors, mi))
+
+    # Print the scores along with their corresponding features
+    for feature, score in mi_scores.items():
+        print(f"{feature}: {score}")
+        
+def get_corr_info(data, predictors, target):
+    # Target variable
+    y = data[target]
+
+    # Features dataset
+    X = data[predictors]
+    
+    # Compute correlation between each predictor and `vote_getter`
+    corr_with_target = X.apply(lambda x: x.corr(y))
+
+    # Sort the correlations with `vote_getter` in descending order
+    corr_with_target = corr_with_target.sort_values(ascending=False)
+
+    # Print the correlation with `vote_getter` for each feature
+    print("Correlation with `vote_getter`:")
+    print(corr_with_target)
