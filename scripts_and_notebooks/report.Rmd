@@ -578,12 +578,10 @@ voters tend to overlook relief pitchers.
 
 **Mason Miller (Oakland Athletics)**
 
-Mason Miller, also shows promise, particularly with his `WAR/IP` (1.00 -
-rookie leader), `K%+` (1.00 - rookie leader), and rookie leading SD
+Mason Miller, also shows promise, particularly with his `WAR/IP` (rookie leader), `K%+` (rookie leader), and rookie leading SD
 (shutdowns), but he trails Smith in several other key metrics, such as
-`ERA-` (0.77) and `K/BB+` (0.91), keeping him behind Smith in overall
-performance. Miller’s slightly lower `IP` rank (0.59 - due to him being
-a closer) indicates that he hasn’t logged as many innings as Smith,
+`ERA-` (6th best) and `K/BB+` (3rd best), keeping him behind Smith in overall
+performance. Miller’s slightly lower `IP` rank indicates that he hasn’t logged as many innings as Smith,
 which may impact his candidacy for Rookie of the Year. However one can
 never expect a closer to really log the same amount of innings as an
 ordinary reliever.
@@ -784,21 +782,19 @@ Merrill (NL).
 **NL Candidate: Jackson Merrill (SDP)**
 
 Jackson Merrill stands out in the NL as the highest-rated rookie batter
-in the MLB. His `WAR` rank (1.00 - rookie leader) and `WPA` (1.00 -
-rookie leader) show that he consistently delivers both in terms of
+in the MLB. His `WAR` rank (rookie leader) and `WPA` (rookie leader) show that he consistently delivers both in terms of
 overall value and in contributing to team wins. Merrill also
 demonstrates a dominant offensive game, with high marks in `wRC+`
-(0.95), `SLG+` (1.00 - rookie leader), and `ISO+` (0.95). While his
-`OBP+` (0.59) suggests room for improvement in getting on base, his
-performance across multiple offensive metrics and his mediocre `Def`
-(0.55) make him the most complete candidate in the NL.
+(2nd best), `SLG+` (rookie leader), and `ISO+` (2nd best). While his
+`OBP+` (10th best) suggests room for improvement in getting on base, his
+performance across multiple offensive metrics make him the most complete candidate in the NL.
 
 **AL Candidate: Austin Wells (NYY)**
 
 Austin Wells has been the top rookie batter in the AL, with strong ranks
-in `WAR/G` (1.00 - rookie leader), and `WAR` (0.91). Aside from this his
-high `OBP+` (0.91) highlights his consistency to reach base offensively.
-His stellar `Def` (1.00 - rookie leader) further strengthens his case as
+in `WAR/G` (rookie leader), and `WAR` (3rd best). Aside from this his
+high `OBP+` (3rd best) highlights his consistency to reach base offensively.
+His stellar `Def` (rookie leader) further strengthens his case as
 the top rookie in the AL, making him a worthy candidate for the award.
 
 In summary, Jackson Merrill (NL) and Austin Wells (AL) would be the top
